@@ -10,20 +10,31 @@
         $(document).ready(function(){
             $(".main").css({
                 "background-color":"black",
-                "hegiht":"40px",
-                "width":"30px",
+                "height":"100px",
+                "width":"150px",
                 "align-items":"center",
-                "justfy-content":"center"
+                "justify-content":"center",
+                "display":"flex"
             });
             
-            })
+            $(".btn").hover(
+      function() {
+        // Mouse enter
+        $(this).css("background-color", "white");
+      },
+      function() {
+        // Mouse leave
+        $(this).css("background-color", "red");
+      }
+    );
+  });
         
     </script>
 
 </head>
 <body>
    <div class="main">
-    <button class="btn"></button>
+    <button class="btn">click me</button>
    </div>
 </body>
 </html>
